@@ -235,6 +235,26 @@ Please show the this screen to Campus Security upon entering any Yeshiva Univers
 	<div id="Plug" style="display:block !important;"><a style="display:block !important;" href="https://www.qualtrics.com/?utm_source=internal%2Binitiatives&amp;utm_medium=survey%2Bpowered%2Bby%2Bqualtrics&amp;utm_content=yeshiva&amp;utm_survey_id=SV_dojNKkKKUHJi8Jf" target="_blank" aria-label="Powered by Qualtrics: Learn more about Qualtrics in a new tab">Powered by Qualtrics</a></div>
 </div>
 
+<head>   
+      <script type = "text/javascript">
+         <!--
+            function DateWriter() {
+             n =  new Date();
+             var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+             month = months[n.getMonth()]; //Date.getMonth() returns a number x. m will become the xth element of "months" array.
+             var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+             day = days[n.getDay()];
+             date = n.getDate();
+             document.getElementsByTagName("span")[2].textContent = day + ", " + month +" " + date + "th" + "<br />5:00 AM"; 
+            //Put it all together. get something like Wednesday, January 27th<br>5:00 AM
+               //Wednesday, January 27th<br>5:00 AM
+            }
+         //-->
+      </script>     
+   </head>
+   
+   <body onload="DateWriter()">
+
 
 
 
