@@ -237,6 +237,22 @@ Please show the this screen to Campus Security upon entering any Yeshiva Univers
 
 <head>   
       <script type = "text/javascript">
+		function getSuffix(day){
+			switch(day){
+				case 1:
+				case 21:
+				case 31:
+					return "st";
+				case 2:
+				case 22:
+					return "nd";
+				case 3:
+				case 23:
+					return "rd";
+				default:
+					return "th";
+			}
+		}
          <!--
             function DateWriter() {
              n =  new Date();
@@ -245,7 +261,9 @@ Please show the this screen to Campus Security upon entering any Yeshiva Univers
              var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
              day = days[n.getDay()];
              date = n.getDate();
-             document.getElementsByTagName("span")[2].textContent = day + ", " + month +" " + date + "th" + "\n5:00 AM"; 
+			 daySuffix = getSuffix(date);
+			 
+             document.getElementsByTagName("span")[2].textContent = day + ", " + month +" " + date + daySuffix + "\n6:15 AM"; 
             //Put it all together. get something like Wednesday, January 27th<br>5:00 AM
                //Wednesday, January 27th<br>5:00 AM
             }
