@@ -263,7 +263,8 @@ Please show the this screen to Campus Security upon entering any Yeshiva Univers
              date = n.getDate();
 			 daySuffix = getSuffix(date);
 			 
-             document.getElementsByTagName("span")[2].textContent = day + ", " + month +" " + date + daySuffix + "\n6:15 AM"; 
+			 document.getElementsByTagName("dateinfo").innerHTML  = day + ", " + month +" " + date + daySuffix + "<br />6:15 AM"; 
+             //document.getElementsByTagName("span")[2].textContent = day + ", " + month +" " + date + daySuffix + "\n6:15 AM"; 
             //Put it all together. get something like Wednesday, January 27th<br>5:00 AM
                //Wednesday, January 27th<br>5:00 AM
             }
